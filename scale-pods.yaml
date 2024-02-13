@@ -1,0 +1,15 @@
+### Task
+1. Scale deployment load-balancer pods to 6
+
+
+### Command
+kubectl edit deployment load-balancer
+Change replicas to 6
+kubectl apply -f load-balancer.yaml
+
+or
+
+kubectl scale --replicas=6 deployment load-balancer
+
+### ref doc
+> https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
